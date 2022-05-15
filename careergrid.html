@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .main{
+           
+            border: 1px solid black;
+            /* height: 400px;*/
+         /* background-color: pink;  */
+            display: grid;
+            grid-template-rows: 100px 200px 200px 100px 100px;
+            grid-template-columns:  auto auto auto auto;
+            grid-gap: 10px;
+            /* justify-content: center; */
+            /* grid-template-rows: 200px 100px 300px 100px 100px 100px 200px ;
+            grid-template-columns: 100px 200px 100px 200px 100px 200px 100px; */
+        }
+        .d1{
+            /* height: 200px;
+            width: 200px; */
+            border: 1px solid black;
+            margin: 2px;
+        }
+        .a{
+            grid-column: 1/-1;
+            /* or grid-column: 1/5; */
+        }
+        .b{
+            grid-row: 2/5;
+        }
+        /* .c{
+            grid-column: 2/-1;
+            grid-row: 2/4;
+        } */
+        .f{
+            grid-column: 2/5;
+            grid-row: 3/5;
+        }
+        .g{
+            grid-column: 1/-1;
+        }
+        .pp{
+            padding-left: 15px;
+            line-height: 25px;
+        }
+        ul{
+            display: flex;
+            justify-content: center         ;
+           
+        }
+        .a ul li{
+            /* display: inline; */
+            padding: 10px;
+            margin: 10px;
+            list-style-type: none;
+            
+
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="d1 a"><ul>
+            <li>Home</li>
+            <li>Product</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Faq</li>
+            <li>Review</li>
+            <li>About</li>
+            <li>Faq</li>
+        </ul></div>
+        <div class="d1 b">
+            <p class="pp">Rectnagle Glasses
+                <br>
+                Round Glasses
+                <br>
+                Benzene Glasses
+                <br>
+                Owl Glasses
+                <br>
+                Round Glasses
+                <br>
+                Benzene Glasses
+                <br>
+                Owl Glasses
+            </p>
+            
+        </div>
+        <div class="d1 c">c</div>
+        <div class="d1 d">d</div>
+        <div class="d1 e">e</div>
+        <div class="d1 f">f</div>
+        <div class="d1 g">g</div>
+        <!-- <div class="d1 h">h</div>
+        <div class="d1 i">i</div>
+        <div class="d1 j">j</div> -->
+        <!-- <div class="d1 k">k</div> -->  
+    </div>
+    
+</body>
+</html>

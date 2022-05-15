@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        form{
+            padding: 50px;
+            border: 2px solid black;
+            width: 500px;
+        }
+        label{
+            margin: 10px;
+        }
+        #n , #e{
+            position:relative;
+            left: 22px;
+
+        }
+        #m{
+            position: relative;
+            top: -150px;
+        }
+        input:invalid{
+            border-color:red ;
+        }
+       
+        input{
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" pattern="[a-zA-z]{3,15}" title="only alphabets allowed with lenght between 3 to 15" name="" id="n">
+        <br><br>
+        <label for="">Email</label>
+        <input type="email" name="" id="e">
+        <br><br>
+        <label for="">Password</label>
+        <input type="password" pattern="[0-9]{7,13}" title="password should be 7 to 15 characters" name="" id="">
+        <br><br>
+        <label for="">Gender</label>
+        <br>
+        
+        <label for="">male</label>
+        <input type="radio" name="gender" id="">
+        <label for="">female</label>
+        <input type="radio" name="gender">
+        <br><br>
+        <label for="">Hobbies</label>
+        <br>
+        <label for="">Cricket</label>
+        <input type="checkbox" name="" id="">
+        <label for="">Baseball</label>
+        <input type="checkbox" name="">
+        <label for="">hockey</label>
+        <input type="checkbox" name="">
+        <br><br>
+        <label for="">Country</label>
+        <select name="" id="" placeholder=country">
+            <option value="">Karachi</option>
+            <option value="">Islamabad</option>
+            <option value="">Lahore</option>
+            <option value="">Multan</option>
+        </select>
+        <br><br>
+        <label id="m" for="">Message</label>
+        <textarea name="" id="" cols=30" rows="10"></textarea>
+
+<!-- <br>
+<br>
+<label for="">upload file</label>
+<input type="file" >
+<br><br>
+<label for="">color</label>
+<input type="color">
+<br><br>
+<label for="">Date</label>
+<input type="date">
+<br><br><label for="">Date</label>
+<input type="datetime-local"> -->
+<br><br>
+<!-- <label for="">week</label>
+<input type="week">
+<br><br>
+<label for="">Month</label>
+<input type="month">
+<br><br>
+<label for="">Tel</label>
+<input type="tel" name="" id="">
+<br><br>
+<label for="">Age</label>
+<input type="number" min="18" max="36">
+<br> -->
+<br><input type="submit" value="submit">
+
+    </form>
+</body>
+</html>
